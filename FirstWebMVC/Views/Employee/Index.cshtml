@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Employee Index";
+}
+
+<h1>Employee Index</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in ViewBag.Employees)
+        {
+            <tr>
+                <td>@employee.EmployeeId</td>
+                <td>@employee.FullName</td>
+                <td>@employee.Department</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
