@@ -1,0 +1,10 @@
+@model FirstWebMVC.Models.BMI
+
+
+<h2>Kết quả BMI</h2>
+
+<p><strong>Cân nặng:</strong> @Model.weight kg</p>
+<p><strong>Chiều cao:</strong> @Model.height m</p>
+<p><strong>BMI:</strong> @Model.BMIScore.ToString()</p>
+
+<a href="/BMI/Index">Tính lại</a>

@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Tính BMI";
+}
+
+<h2>Tính chỉ số BMI</h2>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color: red">@ViewBag.Error</p>
+}
+
+<form method="post" asp-action="Calculate">
+    <label for="weight">Cân nặng (kg):</label>
+    <input type="number" name="weight" step="0.1" required />
+    <br />
+
+    <label for="height">Chiều cao (m):</label>
+    <input type="number" name="height" step="0.01" required />
+    <br />
+
+    <button type="submit">Tính BMI</button>
+</form>
