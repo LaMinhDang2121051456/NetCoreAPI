@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/ADMIN/Desktop/NetCoreAPI/FirstWebMVC/Views/AverageScore/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZlcmFnZVNjb3JlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/NetCoreAPI/FirstWebMVC/Views/AverageScore/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZlcmFnZVNjb3JlXFJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ADMIN/Desktop/NetCoreAPI/FirstWebMVC/Views/BMI/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQk1JXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

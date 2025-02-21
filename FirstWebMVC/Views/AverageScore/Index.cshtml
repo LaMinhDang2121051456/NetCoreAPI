@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Tinh diem mon hoc";
+}
+
+<h2> Tính điểm môn học</h2>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+
+<form method="post" action="Calculate">
+    <label>Tên môn học:</label>
+    <input type="text" name="SubjectName" required/>
+
+    <label>Điểm A:</label>
+    <input type="text" name="Ascore" required/>
+
+    <label>Điểm B:</label>
+    <input type="text" name="Bscore" required/>
+
+    <label>Điểm C:</label>
+    <input type="text" name="Cscore" required/>
+
+    <button type="submit">Tính điểm</button>
+</form>
