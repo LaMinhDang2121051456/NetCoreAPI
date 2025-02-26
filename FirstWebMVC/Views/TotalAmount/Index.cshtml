@@ -1,0 +1,27 @@
+@model List<FirstWebMVC.Models.Product>
+
+@if (ViewBag.TotalAmount != null && Model.Count > 0)
+{
+    <h3>Kết quả hóa đơn</h3>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Mã Sản Phẩm</th>
+            <th>Số Lượng</th>
+            <th>Đơn Giá</th>
+            <th>Thành Tiền</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>@item.Quantity</td>
+                <td>@item.UnitPrice.ToString("N0") đ</td>
+                <td>@item.TotalPrice.ToString("N0") đ</td>
+            </tr>
+        }
+        <tr>
+            <td colspan="3"><b>Tổng tiền:</b></td>
+            <td><b>@ViewBag.TotalAmount.ToString("N0") đ</b></td>
+        </tr>
+    </table>
+}
