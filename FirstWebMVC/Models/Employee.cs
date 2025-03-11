@@ -1,16 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace FirstWebMVC.Models
 {
-    public class Employee
+public class Employee : Person
     {
-        public long Id { get; set; }
-        public string FullName { get; set; }
-        public string Department { get; set; }
-
-        public Employee(long id, string fullName, string department)
-        {
-            Id = id;
-            FullName = fullName;
-            Department = department;
-        }
+        public required string EmployeeId { get; set; }
+        
     }
 }
