@@ -14,7 +14,53 @@ namespace FirstWebMVC.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.2");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
+
+            modelBuilder.Entity("DaiLy", b =>
+                {
+                    b.Property<string>("MaDaiLy")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DiaChi")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DienThoai")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MaHTPP")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NguoiDaiDien")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TenDaiLy")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MaDaiLy");
+
+                    b.HasIndex("MaHTPP");
+
+                    b.ToTable("DaiLy");
+                });
+
+            modelBuilder.Entity("FirstWebMVC.Models.HeThongPhanPhoi", b =>
+                {
+                    b.Property<string>("MaHTPP")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TenHTPP")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MaHTPP");
+
+                    b.ToTable("HeThongPhanPhoi");
+                });
 
             modelBuilder.Entity("FirstWebMVC.Models.Person", b =>
                 {
@@ -55,6 +101,22 @@ namespace FirstWebMVC.Migrations
                     b.ToTable("Persons");
 
                     b.HasDiscriminator().HasValue("Employee");
+                });
+
+            modelBuilder.Entity("DaiLy", b =>
+                {
+                    b.HasOne("FirstWebMVC.Models.HeThongPhanPhoi", "HeThongPhanPhoi")
+                        .WithMany("DaiLys")
+                        .HasForeignKey("MaHTPP")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HeThongPhanPhoi");
+                });
+
+            modelBuilder.Entity("FirstWebMVC.Models.HeThongPhanPhoi", b =>
+                {
+                    b.Navigation("DaiLys");
                 });
 #pragma warning restore 612, 618
         }
