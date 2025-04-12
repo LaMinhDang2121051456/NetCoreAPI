@@ -10,6 +10,6 @@ namespace FirstWebMVC.Models
         public required string MaHTPP { get; set; }
         public string TenHTPP { get; set; } = string.Empty;
 
-        public ICollection<DaiLy> DaiLy { get; set; }
+        public ICollection<DaiLy>? DaiLy { get; set; }
     }
 }

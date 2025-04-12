@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\FirstWebMVC\\FirstWebMVC.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\firstWebMVC\\FirstWebMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\FirstWebMVC\\FirstWebMVC.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\firstWebMVC\\FirstWebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\FirstWebMVC\\FirstWebMVC.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\firstWebMVC\\FirstWebMVC.csproj",
         "projectName": "FirstWebMVC",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\FirstWebMVC\\FirstWebMVC.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\firstWebMVC\\FirstWebMVC.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\FirstWebMVC\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\NetCoreAPI\\firstWebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"

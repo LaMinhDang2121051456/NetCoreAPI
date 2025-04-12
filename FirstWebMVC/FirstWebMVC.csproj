@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <!-- Chỉ giữ lại các package cần thiết -->
+    <PackageReference Include="EPPlus" Version="8.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
